@@ -14,6 +14,7 @@ Currently it includes -
 All work is to be done inside the "_src_" folder. Use the "_dist_" folder for production and importing into the "_index.html_"
 
 _Added dev server_
-Start server my running _npm start server_
 
-Working on _Hot Reloading._
+Start server by running _npm start server_
+
+Working on **Hot Reloading.**
