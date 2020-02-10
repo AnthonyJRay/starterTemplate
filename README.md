@@ -15,6 +15,10 @@ All work is to be done inside the "_src_" folder. Use the "_dist_" folder for pr
 
 _Added dev server_
 
-Start server by running _npm start server_
+Start server by running -
+
+```
+npm start server
+```
 
 Working on **Hot Reloading.**
