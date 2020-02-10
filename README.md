@@ -13,4 +13,7 @@ Currently it includes -
 
 All work is to be done inside the "_src_" folder. Use the "_dist_" folder for production and importing into the "_index.html_"
 
-Plan to add **webpack dev server.**
+_Added dev server_
+Start server my running _npm start server_
+
+Working on _Hot Reloading._

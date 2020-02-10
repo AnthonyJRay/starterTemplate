@@ -1,5 +1,8 @@
 const path = require('path');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const HtmlWebPackPlugin = require('html-webpack-plugin');
+const isDevelopment = process.env.NODE_ENV !== 'production';
+const webpack = require('webpack');
 
 module.exports = {
   entry: './src/javascript/index.js',
@@ -12,8 +15,21 @@ module.exports = {
   plugins: [
     new MiniCssExtractPlugin({
       filename: 'bundle.css'
-    })
+    }),
+
+    new HtmlWebPackPlugin({
+      template: './dist/index.html',
+      filename: 'index.html'
+    }),
+    new webpack.NamedModulesPlugin(),
+    new webpack.HotModuleReplacementPlugin()
   ],
+
+  devServer: {
+    contentBase: path.resolve(__dirname, 'dist'),
+    inline: true,
+    hot: true
+  },
 
   module: {
     rules: [
@@ -66,6 +82,15 @@ module.exports = {
             options: {
               outputPath: 'fonts'
             }
+          }
+        ]
+      },
+      {
+        test: /\.html$/,
+        use: [
+          {
+            loader: 'html-loader',
+            options: { minimize: !isDevelopment }
           }
         ]
       }
