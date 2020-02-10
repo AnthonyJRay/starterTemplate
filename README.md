@@ -10,6 +10,7 @@ Currently it includes -
 1. Autoprefixer
 1. Fonts
 1. Images
+1. Hot Reloading
 
 All work is to be done inside the "_src_" folder. Use the "_dist_" folder for production and importing into the "_index.html_"
 
@@ -20,5 +21,3 @@ Start server by running -
 ```
 npm start server
 ```
-
-Working on **Hot Reloading.**
