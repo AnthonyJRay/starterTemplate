@@ -11,4 +11,6 @@ Currently it includes -
 1. Fonts
 1. Images
 
-Plan to add webpack dev server.
+All work is to be done inside the "_src_" folder. Use the "_dist_" folder for production and importing into the "_index.html_"
+
+Plan to add **webpack dev server.**
