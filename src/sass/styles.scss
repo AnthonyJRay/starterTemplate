@@ -1,0 +1,13 @@
+$bg-color: #c6538c;
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: $bg-color;
+}
+
+#greeting,
+h1 {
+  text-align: center;
+}
