@@ -98,5 +98,5 @@ module.exports = {
     ]
   },
   // Default mode is Production. Uses minifying
-  mode: 'development'
+  mode: 'production'
 };

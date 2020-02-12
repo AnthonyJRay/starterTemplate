@@ -1,5 +1,5 @@
 import '../sass/styles.scss';
-
+// This is a comment
 const greeting = document.getElementById('greeting');
 
 const greet = name => {
